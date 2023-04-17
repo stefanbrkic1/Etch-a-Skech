@@ -72,3 +72,30 @@
     box-sizing: border-box;
     padding: 35px;
 }
+
+.gridBox{
+    border:0.5px solid grey;
+}
+
+.grid{
+    display: grid;
+    height: 100%;
+   
+}
+
+#slider-container {
+    width: 300px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#slider {
+    width: 100%;
+}
+
+#slider-value {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
