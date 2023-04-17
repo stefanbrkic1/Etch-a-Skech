@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@font-face {font-family: KA; src: url(fonts/ka1.ttf);}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.animated-background{
+  height: 100vh;  
+  background: linear-gradient(50deg, #ee9032, #f16d52, #ec4a77, #a063aa, #7963aa, #4b6eb5, #109aaf, #07b89f, #6bb97f);
+  animation: movinggradient 5s ease infinite;
+  background-size: 400% 400%;
+}
+
+@keyframes movinggradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 16px;
+}
+
+.display-text{
+    font-family: 'Righteous', cursive;
+    font-size: 2.5rem;
+    color: aliceblue;
+
+}
+
+.online{
+    font-family: 'KA';
+    font-size: 1.5rem;
+    color: #ec4a77;
+    background-color: aliceblue;
+    padding:10px 20px 10px 20px;
+    border-radius: 18px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.tools{
+    background-color: aliceblue;
+    width:400px;
+    height: 600px;
+    border-radius: 40px;
+}
+
+.sketch-pad{
+    background-color: aliceblue;
+    width:600px;
+    height: 600px;
+    border-radius: 40px;
+}
