@@ -69,4 +69,6 @@
     width:600px;
     height: 600px;
     border-radius: 40px;
+    box-sizing: border-box;
+    padding: 35px;
 }
