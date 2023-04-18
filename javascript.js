@@ -62,4 +62,5 @@ function addEventListenersToGridBoxes() {
 function clearBtn(){
     clearGrid();
     createGrid();
+    addEventListenersToGridBoxes();
 }
