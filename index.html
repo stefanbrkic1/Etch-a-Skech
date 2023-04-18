@@ -20,11 +20,12 @@
 
     <!--#region etch a skech-->
         <div class="container">
-            <div class="tools">            
+            <div class="tools">  
                 <div id="slider-container">
-                    <input type="range" id="slider" min="16" max="100" value="16">
+                    <input type="range" id="slider" min="16" max="60" value="16">
                     <output id="slider-value">GridSize: 16x16</output>
-                </div>            
+                </div>  
+                <button type="button" class="btn-custom" onclick="clearBtn()">Clear</button>          
             </div>
             <div class="sketch-pad">
                 <div id="grid" class="grid">
