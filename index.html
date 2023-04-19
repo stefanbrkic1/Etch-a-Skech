@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="javascript.js" defer></script>
+    <script src="https://kit.fontawesome.com/c2ff6a5a2e.js" crossorigin="anonymous"></script>
     <title>Etch A Skech - Online</title>
 </head>
 <body>
@@ -27,7 +28,38 @@
                     <output id="slider-value">GridSize: 16x16</output>
                 </div>
 
-                
+    <!--#region colorpicker-->   
+        <div class="color-picker-container">
+            <div class="pallete-text">Color Pallete</div>
+            <div class="color-picker">
+                <input type="color" id="color-picker" name="color-picker">
+                <i class="fa-sharp fa-solid fa-eye-dropper eye-dropper"></i>
+            </div>
+            <div class="pallete">
+                <div id="color-box1" class="color-box"></div>
+                <div id="color-box2" class="color-box"></div>
+                <div id="color-box3" class="color-box"></div>
+                <div id="color-box4" class="color-box"></div>
+                <div id="color-box5" class="color-box"></div>
+                <div id="color-box6" class="color-box"></div>
+                <div id="color-box7" class="color-box"></div>
+                <div id="color-box8" class="color-box"></div>
+                <div id="color-box9" class="color-box"></div>
+            </div>
+
+            <div class="pallete">
+                <div id="color-box10" class="color-box"></div>
+                <div id="color-box11" class="color-box"></div>
+                <div id="color-box12" class="color-box"></div>
+                <div id="color-box13" class="color-box"></div>
+                <div id="color-box14" class="color-box"></div>
+                <div id="color-box15" class="color-box"></div>
+                <div id="color-box16" class="color-box"></div>
+                <div id="color-box17" class="color-box"></div>
+                <div id="color-box18" class="color-box"></div>
+            </div>
+        </div>
+    <!--#endregion colorpicker-->
         
                 <div class="buttons-section">
                     <button class="btn-clear" onclick="clearBtn()"><span class="text">Clear</span><span class="icon"><svg
