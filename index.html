@@ -20,16 +20,42 @@
 
     <!--#region etch a skech-->
         <div class="container">
-            <div class="tools">  
+            <div class="tools">
+        
                 <div id="slider-container">
                     <input type="range" id="slider" min="16" max="60" value="16">
                     <output id="slider-value">GridSize: 16x16</output>
-                </div>  
-                <button type="button" class="btn-custom" onclick="clearBtn()">Clear</button>          
+                </div>
+
+                
+        
+                <div class="buttons-section">
+                    <button class="btn-clear" onclick="clearBtn()"><span class="text">Clear</span><span class="icon"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z">
+                                </path>
+                            </svg></span></button>
+                    <button class="btn-download" type="button">
+                        <span class="button__text">Download</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35"
+                                id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg">
+                                <path
+                                    d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z">
+                                </path>
+                                <path
+                                    d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z">
+                                </path>
+                                <path
+                                    d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z">
+                                </path>
+                            </svg></span>
+                    </button>
+                </div>
             </div>
             <div class="sketch-pad">
                 <div id="grid" class="grid">
-
+        
                 </div>
             </div>
         </div>
