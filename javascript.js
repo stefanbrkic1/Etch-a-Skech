@@ -85,96 +85,195 @@ const colorBox15=document.getElementById('color-box15')
 const colorBox16=document.getElementById('color-box16')
 const colorBox17=document.getElementById('color-box17')
 const colorBox18=document.getElementById('color-box18')
+const colorBox19=document.getElementById('color-box19')
+const colorBox20=document.getElementById('color-box20')
+const colorBox21=document.getElementById('color-box21')
+const colorBox22=document.getElementById('color-box22')
+const colorBox23=document.getElementById('color-box23')
+const colorBox24=document.getElementById('color-box24')
+const colorBox25=document.getElementById('color-box25')
+const colorBox26=document.getElementById('color-box26')
+const colorBox27=document.getElementById('color-box27')
+const colorBox28=document.getElementById('color-box28')
+const colorBox29=document.getElementById('color-box29')
+const colorBox30=document.getElementById('color-box30')
+const colorBox31=document.getElementById('color-box31')
+const colorBox32=document.getElementById('color-box32')
+const colorBox33=document.getElementById('color-box33')
 
 colorBox1.addEventListener('click', () => {
-    let color="#FF0000";
+    let color="#f31f26";
     colorPickr.value=color;
 })
 
 colorBox2.addEventListener('click', () => {
-  let color="#00FF00";
+  let color="#f9ee00";
   colorPickr.value=color;
 })
 
 colorBox3.addEventListener('click', () => {
-  let color="#0000FF";
+  let color="#00a94d";
   colorPickr.value=color;
 })
 
 colorBox4.addEventListener('click', () => {
-  let color="#FFFF00";
+  let color="#01aef0";
   colorPickr.value=color;
 })
 
 colorBox5.addEventListener('click', () => {
-  let color="#FF00FF";
+  let color="#2f3194";
   colorPickr.value=color;
 })
 
 colorBox6.addEventListener('click', () => {
-  let color="#00FFFF";
+  let color="#ee1d96";
   colorPickr.value=color;
 })
 
 colorBox7.addEventListener('click', () => {
-  let color="#FFA500";
+  let color="#bf1d2c";
   colorPickr.value=color;
 })
 
 colorBox8.addEventListener('click', () => {
-  let color="#800080";
+  let color="#f23c38";
   colorPickr.value=color;
 })
 
 colorBox9.addEventListener('click', () => {
-  let color="#008000";
+  let color="#f4582d";
   colorPickr.value=color;
 })
 
 colorBox10.addEventListener('click', () => {
-  let color="#800000";
+  let color="#fc9716";
   colorPickr.value=color;
 })
 
 colorBox11.addEventListener('click', () => {
-  let color="#808000";
+  let color="#fced36";
   colorPickr.value=color;
 })
 
 colorBox12.addEventListener('click', () => {
-  let color="#008080";
+  let color="#8dc73f";
   colorPickr.value=color;
 })
 
 colorBox13.addEventListener('click', () => {
-  let color="#C0C0C0";
+  let color="#39b44a";
   colorPickr.value=color;
 })
 
 colorBox14.addEventListener('click', () => {
-  let color="#808080";
+  let color="#019444";
   colorPickr.value=color;
 })
 
 colorBox15.addEventListener('click', () => {
-  let color="#FFC0CB";
+  let color="#006738";
   colorPickr.value=color;
 })
 
 colorBox16.addEventListener('click', () => {
-  let color="#00FF7F";
+  let color="#2bb673";
   colorPickr.value=color;
 })
 
 colorBox17.addEventListener('click', () => {
-  let color="#FFD700";
+  let color="#01a897";
   colorPickr.value=color;
 })
 
 colorBox18.addEventListener('click', () => {
-  let color="#ADFF2F";
+  let color="#20ace2";
   colorPickr.value=color;
 })
+
+colorBox18.addEventListener('click', () => {
+  let color="#20ace2";
+  colorPickr.value=color;
+})
+
+colorBox19.addEventListener('click', () => {
+  let color="#1876bc";
+  colorPickr.value=color;
+})
+
+colorBox20.addEventListener('click', () => {
+  let color="#293993";
+  colorPickr.value=color;
+})
+
+colorBox21.addEventListener('click', () => {
+  let color="#272561";
+  colorPickr.value=color;
+})
+
+colorBox22.addEventListener('click', () => {
+  let color="#25205d";
+  colorPickr.value=color;
+})
+
+colorBox23.addEventListener('click', () => {
+  let color="#61308c";
+  colorPickr.value=color;
+})
+
+colorBox24.addEventListener('click', () => {
+  let color="#90278e";
+  colorPickr.value=color;
+})
+
+colorBox25.addEventListener('click', () => {
+  let color="#764c2d";
+  colorPickr.value=color;
+})
+
+colorBox26.addEventListener('click', () => {
+  let color="#603715";
+  colorPickr.value=color;
+})
+
+colorBox27.addEventListener('click', () => {
+  let color="#3a3a3c";
+  colorPickr.value=color;
+})
+
+colorBox28.addEventListener('click', () => {
+  let color="#59595b";
+  colorPickr.value=color;
+})
+
+colorBox29.addEventListener('click', () => {
+  let color="#6d6e71";
+  colorPickr.value=color;
+})
+
+colorBox30.addEventListener('click', () => {
+  let color="#808285";
+  colorPickr.value=color;
+})
+
+colorBox31.addEventListener('click', () => {
+  let color="#939498";
+  colorPickr.value=color;
+})
+
+colorBox32.addEventListener('click', () => {
+  let color="#a9a9ad";
+  colorPickr.value=color;
+})
+
+colorBox33.addEventListener('click', () => {
+  let color="#d2d3d5";
+  colorPickr.value=color;
+})
+
+
+
+const rainbowBtn=document.getElementById('rainbowBtn')
 
 
 

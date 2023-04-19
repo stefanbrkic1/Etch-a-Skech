@@ -95,7 +95,7 @@
     text-align: center;
     border-radius: 15px;
     margin-bottom: 20px;
-    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #slider {
@@ -120,7 +120,7 @@
  background: red;
  border: none;
  border-radius: 5px;
- box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
  background: #e62222;
  
 }
@@ -188,7 +188,7 @@
     border-radius: 5px;
     background-color: #209978;
     overflow: hidden;
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
   .btn-download, .button__icon, .button__text {
@@ -249,34 +249,35 @@
 
 .color-picker-container{
     width: 100%;
-    height: 175px;
+    height: 215px;
     background-color: #747474;
     border-radius: 15px;
     box-sizing: border-box;
     padding: 20px;
-    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #color-picker{
-    width: 100%;
+    width: 80px;
     height: 33px;
-    border: none;
+    border: 2px solid white;
+    box-sizing: border-box;
     outline: none;
-    border-radius: 3px;
     cursor: pointer;
-    appearance: none;
-    -webkit-appearance: none; /* For Safari */
-    -moz-appearance: none; /* For Firefox */
 }
 
 .color-picker{
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding-bottom: 12px;
+    padding:8px 2px 8px 2px;
+    border-radius: 5px;
+    background-color:  #8f8f8f;
+    width: 140px;
 }
 
 .eye-dropper{
-    margin-left: 20px;
+    margin-left: 11px;
     background-color: #ffffff;
     padding: 10px 10px;
     border-radius: 5px;
@@ -296,59 +297,106 @@
 }
 
 #color-box1{
-    background-color: #FF0000;
+    background-color: #f31f26;
 }
 #color-box2{
-    background-color: #00FF00;
+    background-color: #f9ee00;
 }
 #color-box3{
-    background-color: #0000FF;
+    background-color: #00a94d;
 }
 #color-box4{
-    background-color: #FFFF00;
+    background-color: #01aef0;
 }
 #color-box5{
-    background-color: #FF00FF;
+    background-color: #2f3194;
 }
 #color-box6{
-    background-color: #00FFFF;
+    background-color: #ee1d96;
 }
 #color-box7{
-    background-color: #FFA500;
+    background-color: #bf1d2c;
 }
 #color-box8{
-    background-color: #800080;
+    background-color: #f23c38;
 }
 #color-box9{
-    background-color: #008000;
+    background-color: #f4582d;
 }
 #color-box10{
-    background-color: #800000;
+    background-color: #fc9716;
 }
 #color-box11{
-    background-color: #808000;
+    background-color: #fced36;
 }
 #color-box12{
-    background-color: #008080;
+    background-color: #8dc73f;
 }
 #color-box13{
-    background-color: #C0C0C0;
+    background-color: #39b44a;
 }
 #color-box14{
-    background-color: #808080;
+    background-color: #019444;
 }
 #color-box15{
-    background-color: #FFC0CB;
+    background-color: #006738;
 }
 #color-box16{
-    background-color: #00FF7F;
+    background-color: #2bb673;
 }
 #color-box17{
-    background-color: #FFD700;
+    background-color: #01a897;
 }
 #color-box18{
-    background-color: #ADFF2F;
+    background-color: #20ace2;
 }
+#color-box19{
+    background-color: #1876bc;
+}
+#color-box20{
+    background-color: #293993;
+}
+#color-box21{
+    background-color: #272561;
+}
+#color-box22{
+    background-color: #25205d;
+}
+#color-box23{
+    background-color: #61308c;
+}
+#color-box24{
+    background-color: #90278e;
+}
+#color-box25{
+    background-color: #764c2d;
+}
+#color-box26{
+    background-color: #603715;
+}
+#color-box27{
+    background-color: #3a3a3c;
+}
+#color-box28{
+    background-color: #59595b;
+}
+#color-box29{
+    background-color: #6d6e71;
+}
+#color-box30{
+    background-color: #808285;
+}
+#color-box31{
+    background-color: #939498;
+}
+#color-box32{
+    background-color: #a9a9ad;
+}
+#color-box33{
+    background-color: #d2d3d5;
+}
+
+
 
 .pallete-text{
     color: #fff;
@@ -357,4 +405,39 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* this button is inspired from this -- https://www.newline.co/pricing */
+.rainbow {
+    --width: 140px;
+    --timing: 2s;
+    border: 0;
+    width: var(--width);
+    padding-block: 0.8em;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    background: rgb(64, 192, 87);
+    transition: all 0.2s;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .rainbow:hover {
+    background-image: linear-gradient(to right, rgb(250, 82, 82), rgb(250, 82, 82) 16.65%, rgb(190, 75, 219) 16.65%, rgb(190, 75, 219) 33.3%, rgb(76, 110, 245) 33.3%, rgb(76, 110, 245) 49.95%, rgb(64, 192, 87) 49.95%, rgb(64, 192, 87) 66.6%, rgb(250, 176, 5) 66.6%, rgb(250, 176, 5) 83.25%, rgb(253, 126, 20) 83.25%, rgb(253, 126, 20) 100%, rgb(250, 82, 82) 100%);
+    animation: var(--timing) linear rainbow-effect infinite;
+    transform: scale(1.1) translateY(-1px);
+  }
+  
+  @keyframes rainbow-effect {
+    to {
+      background-position: var(--width);
+    }
+  }
+  
+  
 
+.flex-color-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
