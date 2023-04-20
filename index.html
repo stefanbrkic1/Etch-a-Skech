@@ -9,8 +9,8 @@
     <script src="https://kit.fontawesome.com/c2ff6a5a2e.js" crossorigin="anonymous"></script>
     <title>Etch A Skech - Online</title>
 </head>
-<body>
-    <div class="animated-background">
+<body class="animated-background">
+   <!--<div class="animated-background">-->
 
     <!--#region header-->
         <div class="display">
@@ -25,7 +25,13 @@
         
                 <div id="slider-container">
                     <input type="range" id="slider" min="16" max="60" value="16">
+                    <div class="slider-flex">
                     <output id="slider-value">GridSize: 16x16</output>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                      </label>
+                    </div>
                 </div>
 
     <!--#region colorpicker-->   
@@ -82,7 +88,27 @@
             </div>
         </div>
     <!--#endregion colorpicker-->
-        
+
+    <!--#region toolbox-->
+        <div class="toolbox-container">
+            <div class="pallete-text">Tools</div>
+            <div class="toolbox">
+                <div class="tool-icon" id="eraser">
+                    <i class="fa-solid fa-eraser" style="color: #ffffff;"></i>
+                </div>
+                <div class="tool-icon" id="light">
+                    <i class="fa-solid fa-lightbulb" style="color: #ffffff;"></i>
+                </div>
+                <div class="tool-icon" id="shade">
+                    <i class="fa-solid fa-circle-half-stroke" style="color: #ffffff;"></i>
+                </div>
+                <div class="tool-icon" id="fill">
+                    <i class="fa-solid fa-fill-drip" style="color: #ffffff;"></i>
+                </div>
+            </div>
+        </div>
+    <!---#endregion toolbox-->
+
                 <div class="buttons-section">
                     <button class="btn-clear" onclick="clearBtn()"><span class="text">Clear</span><span class="icon"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -115,6 +141,6 @@
         </div>
     <!--#endregion etch a skech-->
 
-    </div>
+  <!--</div>-->  
 </body>
 </html>
