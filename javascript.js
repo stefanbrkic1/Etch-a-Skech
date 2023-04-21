@@ -28,6 +28,7 @@ function createGrid() {
 
     const gridBox = document.createElement('div');
     gridBox.classList.add('gridBox');
+    gridBox.classList.add('visibleGrid');
     grid.appendChild(gridBox);
   }
 }

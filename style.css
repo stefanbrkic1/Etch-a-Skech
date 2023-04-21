@@ -6,6 +6,13 @@
     padding: 0;
 }
 
+.background{
+        background-image: url(img/background.jpg);
+        height: 100vh;
+        background-position: center;
+    
+}
+
 .animated-background{
   height: 100vh;  
   background: linear-gradient(50deg, #ee9032, #f16d52, #ec4a77, #a063aa, #7963aa, #4b6eb5, #109aaf, #07b89f, #6bb97f);
@@ -43,7 +50,7 @@
 .online{
     font-family: 'KA';
     font-size: 1.5rem;
-    color: #ec4a77;
+    color: #3d3d3d;
     background-color: aliceblue;
     padding:10px 20px 10px 20px;
     border-radius: 18px;
@@ -53,11 +60,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 50px;
 }
 
 .tools{
-    background-color: aliceblue;
+    background-color: #727272;
     width:400px;
     height:600px;
     border-radius: 40px;
@@ -65,20 +72,21 @@
     flex-direction: column;
     box-sizing: border-box;
     padding: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3), 0px -4px 8px rgba(0, 0, 0, 0.3), 4px 0px 8px rgba(0, 0, 0, 0.3), -4px 0px 8px rgba(0, 0, 0, 0.3);
 }
 
 .sketch-pad{
-    background-color: aliceblue;
+    background-color: #727272;
     width:600px;
     height: 600px;
     border-radius: 40px;
     box-sizing: border-box;
     padding: 35px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3), 0px -4px 8px rgba(0, 0, 0, 0.3), 4px 0px 8px rgba(0, 0, 0, 0.3), -4px 0px 8px rgba(0, 0, 0, 0.3);
 }
 
 .gridBox{
+    background-color: aliceblue;
     cursor: crosshair;
 }
 
@@ -93,7 +101,7 @@
 }
 
 #slider-container {
-    background-color: #747474;
+    background-color: #5c5c5c;
     padding: 20px 20px;
     text-align: center;
     border-radius: 15px;
@@ -103,7 +111,7 @@
 }
 
 .toolbox-container {
-    background-color: #747474;
+    background-color: #5c5c5c;
     padding: 20px 20px;
     border-radius: 15px;
     margin-bottom: 20px;
@@ -253,7 +261,7 @@
     position: absolute;
     transform: translateX(109px);
     height: 100%;
-    width: 39px;
+    width: 42px;
     background-color: #17795E;
     display: flex;
     align-items: center;
@@ -299,7 +307,7 @@
 .color-picker-container{
     width: 100%;
     height: auto;
-    background-color: #747474;
+    background-color: #5c5c5c;
     border-radius: 15px;
     box-sizing: border-box;
     padding: 20px;
