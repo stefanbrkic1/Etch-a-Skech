@@ -131,6 +131,14 @@
     cursor: pointer;
 }
 
+.tool-icon-disabled{
+    background-color: #8f8f8f;
+    border-radius: 5px;
+    margin-left: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
 .tool-icon:hover{
     background-color: #a0a0a0;
 }
