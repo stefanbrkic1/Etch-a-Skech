@@ -44,22 +44,26 @@ function addEventListenersToGridBoxes() {
   const shadeBtn = document.getElementById('shade')
   const fillBtn = document.getElementById('fill')
   const disableBtn=document.getElementById('disableBtn')
+  const rainbowBtn=document.getElementById('rainbowBtn')
 
 
   let isEraserOn = false;
   let isLightOn = false;
   let isShadeOn = false;
   let isFillOn = false;
+  let isRainbowOn = false;
 
   eraserBtn.addEventListener('click', () => {
     isEraserOn=true;
     isLightOn=false;
     isShadeOn=false;
     isFillOn = false;
+    isRainbowOn = false;
     eraserBtn.classList.add('tool-active')
     lightBtn.classList.remove('tool-active')
     shadeBtn.classList.remove('tool-active')
     fillBtn.classList.remove('tool-active')
+    rainbowBtn.classList.remove('rainbow-active')
   })
 
   lightBtn.addEventListener('click', () => {
@@ -67,10 +71,12 @@ function addEventListenersToGridBoxes() {
     isLightOn=true;
     isShadeOn=false;
     isFillOn = false;
+    isRainbowOn = false;
     lightBtn.classList.add('tool-active')
     eraserBtn.classList.remove('tool-active')
     shadeBtn.classList.remove('tool-active')
     fillBtn.classList.remove('tool-active')
+    rainbowBtn.classList.remove('rainbow-active')
   })
 
   shadeBtn.addEventListener('click', () => {
@@ -78,10 +84,12 @@ function addEventListenersToGridBoxes() {
     isLightOn=false;
     isShadeOn=true;
     isFillOn = false;
+    isRainbowOn = false;
     shadeBtn.classList.add('tool-active')
     lightBtn.classList.remove('tool-active')
     eraserBtn.classList.remove('tool-active')
     fillBtn.classList.remove('tool-active')
+    rainbowBtn.classList.remove('rainbow-active')
   })
 
   fillBtn.addEventListener('click', () => {
@@ -89,10 +97,12 @@ function addEventListenersToGridBoxes() {
     isLightOn=false;
     isShadeOn=false;
     isFillOn = true;
+    isRainbowOn = false;
     fillBtn.classList.add('tool-active')
     lightBtn.classList.remove('tool-active')
     eraserBtn.classList.remove('tool-active')
     shadeBtn.classList.remove('tool-active')
+    rainbowBtn.classList.remove('rainbow-active')
   })
 
   disableBtn.addEventListener('click', () => {
@@ -100,6 +110,19 @@ function addEventListenersToGridBoxes() {
     isLightOn=false;
     isShadeOn=false;
     isFillOn = false;
+    eraserBtn.classList.remove('tool-active')
+    lightBtn.classList.remove('tool-active')
+    shadeBtn.classList.remove('tool-active')
+    fillBtn.classList.remove('tool-active')
+  })
+
+  rainbowBtn.addEventListener('click', () => {
+    isRainbowOn=true;
+    isEraserOn=false;
+    isLightOn=false;
+    isShadeOn=false;
+    isFillOn = false;
+    rainbowBtn.classList.add('rainbow-active')
     eraserBtn.classList.remove('tool-active')
     lightBtn.classList.remove('tool-active')
     shadeBtn.classList.remove('tool-active')
@@ -124,6 +147,14 @@ function addEventListenersToGridBoxes() {
         gridBoxes.forEach(gridBox => {
           gridBox.style.backgroundColor=colorPickr.value; 
         })
+      }
+      else if(isRainbowOn===true){
+        let R=Math.floor(Math.random()*256)
+        let G=Math.floor(Math.random()*256)
+        let B=Math.floor(Math.random()*256)
+        let randomColor=`rgb(${R}, ${G}, ${B})`
+
+        gridBox.style.backgroundColor=randomColor; 
       }
       else{
         gridBox.style.backgroundColor = colorPickr.value; 
@@ -151,6 +182,14 @@ function addEventListenersToGridBoxes() {
           gridBoxes.forEach(gridBox => {
             gridBox.style.backgroundColor=colorPickr.value; 
           })
+        }
+        else if(isRainbowOn===true){
+          let R=Math.floor(Math.random()*256)
+          let G=Math.floor(Math.random()*256)
+          let B=Math.floor(Math.random()*256)
+          let randomColor=`rgb(${R}, ${G}, ${B})`
+  
+          gridBox.style.backgroundColor=randomColor; 
         }
         else{
           gridBox.style.backgroundColor = colorPickr.value; 
