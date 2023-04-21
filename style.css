@@ -151,6 +151,11 @@
     padding: 12px 12px 12px 12px;
 }
 
+#disableBtn{
+    padding: 16px 19.5px 16px 19.5px;
+}
+
+
 
 
 #slider {
@@ -565,5 +570,12 @@
     margin-top: 10px;
     gap: 10px;
    }
+
+.tool-active{
+    border: 2px solid yellow;
+}
+
+
+
 
    

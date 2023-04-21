@@ -39,12 +39,96 @@ function clearGrid() {
 
 function addEventListenersToGridBoxes() {
   const gridBoxes = document.querySelectorAll('.gridBox');
-  let isMouseDown = false;
+  const eraserBtn = document.getElementById('eraser')
+  const lightBtn = document.getElementById('light')
+  const shadeBtn = document.getElementById('shade')
+  const fillBtn = document.getElementById('fill')
+  const disableBtn=document.getElementById('disableBtn')
 
+
+  let isEraserOn = false;
+  let isLightOn = false;
+  let isShadeOn = false;
+  let isFillOn = false;
+
+  eraserBtn.addEventListener('click', () => {
+    isEraserOn=true;
+    isLightOn=false;
+    isShadeOn=false;
+    isFillOn = false;
+    eraserBtn.classList.add('tool-active')
+    lightBtn.classList.remove('tool-active')
+    shadeBtn.classList.remove('tool-active')
+    fillBtn.classList.remove('tool-active')
+  })
+
+  lightBtn.addEventListener('click', () => {
+    isEraserOn=false;
+    isLightOn=true;
+    isShadeOn=false;
+    isFillOn = false;
+    lightBtn.classList.add('tool-active')
+    eraserBtn.classList.remove('tool-active')
+    shadeBtn.classList.remove('tool-active')
+    fillBtn.classList.remove('tool-active')
+  })
+
+  shadeBtn.addEventListener('click', () => {
+    isEraserOn=false;
+    isLightOn=false;
+    isShadeOn=true;
+    isFillOn = false;
+    shadeBtn.classList.add('tool-active')
+    lightBtn.classList.remove('tool-active')
+    eraserBtn.classList.remove('tool-active')
+    fillBtn.classList.remove('tool-active')
+  })
+
+  fillBtn.addEventListener('click', () => {
+    isEraserOn=false;
+    isLightOn=false;
+    isShadeOn=false;
+    isFillOn = true;
+    fillBtn.classList.add('tool-active')
+    lightBtn.classList.remove('tool-active')
+    eraserBtn.classList.remove('tool-active')
+    shadeBtn.classList.remove('tool-active')
+  })
+
+  disableBtn.addEventListener('click', () => {
+    isEraserOn=false;
+    isLightOn=false;
+    isShadeOn=false;
+    isFillOn = false;
+    eraserBtn.classList.remove('tool-active')
+    lightBtn.classList.remove('tool-active')
+    shadeBtn.classList.remove('tool-active')
+    fillBtn.classList.remove('tool-active')
+  })
+
+  let isMouseDown = false;
+  
   gridBoxes.forEach(gridBox => {
     gridBox.addEventListener('mousedown', () => {
       isMouseDown = true;
-      gridBox.style.backgroundColor = colorPickr.value; 
+      if(isEraserOn===true){
+        gridBox.style.backgroundColor = 'aliceblue'; 
+      }
+      else if(isLightOn===true){
+        gridBox.style.filter='brightness(130%)';
+      }
+      else if(isShadeOn===true){
+        gridBox.style.filter='brightness(70%)';
+      }
+      else if(isFillOn===true){
+        gridBoxes.forEach(gridBox => {
+          gridBox.style.backgroundColor=colorPickr.value; 
+        })
+      }
+      else{
+        gridBox.style.backgroundColor = colorPickr.value; 
+      }
+      
     });
 
     
@@ -53,8 +137,25 @@ function addEventListenersToGridBoxes() {
     });
 
     gridBox.addEventListener('mouseover', () => {
-      if (isMouseDown) {
-        gridBox.style.backgroundColor = colorPickr.value; 
+      if (isMouseDown===true) {
+        if(isEraserOn===true){
+          gridBox.style.backgroundColor = 'aliceblue'; 
+        }
+        else if(isLightOn===true){
+          gridBox.style.filter='brightness(130%)';
+        }
+        else if(isShadeOn===true){
+          gridBox.style.filter='brightness(70%)';
+        }
+        else if(isFillOn===true){
+          gridBoxes.forEach(gridBox => {
+            gridBox.style.backgroundColor=colorPickr.value; 
+          })
+        }
+        else{
+          gridBox.style.backgroundColor = colorPickr.value; 
+        }
+        
       }
     });
   });
@@ -289,6 +390,8 @@ const checkBox=document.getElementById('checkbox1')
     }
   }
  })
+
+
 
 
 
