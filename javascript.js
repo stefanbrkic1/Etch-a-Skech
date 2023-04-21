@@ -273,7 +273,22 @@ colorBox33.addEventListener('click', () => {
 
 
 
-const rainbowBtn=document.getElementById('rainbowBtn')
+
+const checkBox=document.getElementById('checkbox1')
+ checkBox.addEventListener('change', function(event){
+  const allBoxes=document.getElementsByClassName('gridBox')
+  if(event.target.checked===true){
+    for(let i=0; i<allBoxes.length;i++){
+      allBoxes[i].classList.add('visibleGrid')
+    }
+  }
+  else{
+    for(let i=0; i<allBoxes.length;i++){
+      allBoxes[i].classList.remove('visibleGrid')
+    }
+  }
+ })
+
 
 
 
