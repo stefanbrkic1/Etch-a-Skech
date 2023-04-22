@@ -3,6 +3,11 @@
     font-family: 'SF Pro',sans-serif;
     src: url(fonts/FontsFree-Net-SFProText-Regular.ttf);
 }
+
+@font-face {
+    font-family: 'Minecraft';
+    src: url(fonts/Minecraft.ttf);
+}
 *{
     margin: 0;
     padding: 0;
@@ -51,11 +56,11 @@
 }
 
 .online{
-    font-family: 'SF Pro',sans-serif;
+    font-family: 'Minecraft';
     font-size: 1.5rem;
-    color: #3d3d3d;
+    color: #00a300;
     background-color: aliceblue;
-    padding:10px 20px 10px 20px;
+    padding:10px 20px 5px 20px;
     border-radius: 18px;
 }
 
@@ -624,3 +629,29 @@ a:hover{
     display: flex;
     flex-direction: column;
 }
+
+.logo-sketch{
+    width: 40px;
+}
+
+@media (max-width: 767px) {
+    .container{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .sketch-pad{
+        width:400px;
+    height: 400px;
+    }
+
+    .online{
+        display: none;
+        font-size: 1.5rem;
+        
+    }
+
+    .display{
+        flex-direction: column;
+    }
+  }
