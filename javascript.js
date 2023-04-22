@@ -430,6 +430,42 @@ const checkBox=document.getElementById('checkbox1')
   }
  })
 
+ const downloadBtn=document.getElementById('downloadBtn')
+ 
+
+ // Import the html2canvas library
+var html2canvas = window.html2canvas || {};
+
+// Add a click event listener to the download button
+downloadBtn.addEventListener('click', function(){
+  takeScreenshot();
+});
+
+function takeScreenshot() {
+  // Get the div element to capture
+  var gridScreenshot = document.getElementById('grid');
+
+  // Use html2canvas to capture the content of the div element as an image
+  html2canvas(gridScreenshot).then(function(canvas) {
+    // Create a download link
+    var link = document.createElement('a');
+
+    // Set the download link's href to the data URL of the canvas image
+    link.href = canvas.toDataURL('image/png');
+
+    // Set the download link's download attribute to the desired filename
+    link.download = 'sketch.png';
+
+    // Trigger the download
+    link.click();
+  });
+}
+
+
+
+
+
+
 
 
 
