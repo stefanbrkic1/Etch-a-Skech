@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-@font-face {font-family: KA; src: url(fonts/ka1.ttf);}
-
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@700&display=swap');
+@font-face {
+    font-family: 'SF Pro',sans-serif;
+    src: url(fonts/FontsFree-Net-SFProText-Regular.ttf);
+}
 *{
     margin: 0;
     padding: 0;
@@ -36,19 +38,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 25px;
     gap: 16px;
+    flex: 1;
 }
 
 .display-text{
-    font-family: 'Righteous', cursive;
+    font-family: 'Pathway Extreme', sans-serif;
     font-size: 2.5rem;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
 
 }
 
 .online{
-    font-family: 'KA';
+    font-family: 'SF Pro',sans-serif;
     font-size: 1.5rem;
     color: #3d3d3d;
     background-color: aliceblue;
@@ -61,12 +64,14 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
+    flex: 1;
+    margin-bottom: 20px;
 }
 
 .tools{
     background-color: #727272;
     width:400px;
-    height:600px;
+    height:auto;
     border-radius: 40px;
     display: flex;
     flex-direction: column;
@@ -174,7 +179,7 @@
 #slider-value {
     display: block;
     font-size: 16px;
-    font-family: 'Arial', sans-serif;
+    font-family: 'SF Pro',sans-serif;
     font-weight: 800;
     color: #f7f7f7;
 }
@@ -476,7 +481,7 @@
     color: #fff;
     font-weight: 800;
     padding-bottom: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'SF Pro',sans-serif;
 }
 
 /* this button is inspired from this -- https://www.newline.co/pricing */
@@ -585,7 +590,37 @@
     border: 2px solid yellow;
 }
 
+.footer{
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex: 1;
+}
 
+.footer-text{
+    color: #fff;
+    font-family: 'SF Pro', sans-serif;
+}
 
+a{
+    text-decoration: none;
+    color: #fff;
+}
 
+a:hover{
+    text-decoration: none;
+    color: #0270ff;
+}
    
+.github{
+    width: 25px;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
