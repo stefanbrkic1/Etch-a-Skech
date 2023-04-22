@@ -1,5 +1,6 @@
 # Etch-a-Sketch: Pixel Sketch App
 Browser version of something between a Sketchpad and an Etch-A-Sketch. 
+[Live App](https://stefanbrkic1.github.io/Etch-a-Sketch/)
 
 Create your own pixel art.
 
