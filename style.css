@@ -655,3 +655,27 @@ a:hover{
         flex-direction: column;
     }
   }
+
+  @media (min-width: 767px) and (max-width: 912px){
+    .container{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .sketch-pad{
+        width:750px;
+        height: 750px;
+    }
+
+    .online{
+        display: none;
+        font-size: 1.5rem;
+        
+    }
+
+    .display{
+        flex-direction: column;
+    }
+  }
+
+  
